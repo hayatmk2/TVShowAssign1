@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IcurrentShow } from '../icurrent-show';
 
+
 @Component({
   selector: 'app-current-show',
   templateUrl: './current-show.component.html',
