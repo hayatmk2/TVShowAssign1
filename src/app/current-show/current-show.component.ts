@@ -10,13 +10,14 @@ import { IcurrentShow } from '../icurrent-show';
 export class CurrentShowComponent implements OnInit {
   current: IcurrentShow
   constructor() { 
-    this.current={
+    this.current ={
       name: 'Girls',
       genres: 'Drama',
       image: '',
       schedule: 'Sunday',
       rating: 6.6,
-      nerwork: 'HBO'
+      network: 'HBO',
+      summary: 'A show about life'
     }
   }
 
