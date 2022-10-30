@@ -1,5 +1,15 @@
 <div style="text-align: center">
-  <h1>MY TvShow</h1>
-  <h2>About the show</h2>
+  <h1>Team 2's awesome TV show app assignemtn #1</h1>
+  <h2>You can look up shows using this cool app!</h2>
 <app-current-show></app-current-show>
+  <div>
+    <!-- the below items echo class example of city/country name, the variable or class or object called probably isn't right, putting in placeholders for now -->
+    <span>{{current.name}}</span> 
+  </div>
+  <div>
+    <!-- this would be an image of the show -->
+    <img [src]="'current.image" />
+    <span>{{current.description}}</span>
+    <span>{{current.genres}},{{current.schedule}},{{current.rating}},{{current.network}}</span>
+  </div>
 </div>
