@@ -4,5 +4,6 @@ export interface IcurrentShow {
   image: string
   schedule: string
   rating: number
-  nerwork: string
+  network: string
+  summary: string
 }
