@@ -6,4 +6,9 @@ export interface IcurrentShow {
   rating: number
   network: string
   summary: string
+  runtime: number
+  premiered: string
+  ending: string
+
 }
+
