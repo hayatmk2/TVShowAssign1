@@ -2,13 +2,11 @@ export interface ICurrentShowData {
   name: string,
   image:{medium:string},
   network:{name:string},
-  rating: number,
+  rating:{average:number},
   runtime: number,
   premiered: string,
   ending: string,
   summary: string,
-  schedule:{time: string, day:[string]},
-  genres: [string]
-  
-
+  schedule:{time: string, days:string},
+  genres: string
 }
