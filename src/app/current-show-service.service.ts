@@ -23,13 +23,16 @@ export class CurrentShowServiceService {
     // not sure if I have to add array # for genres..
     genres: data.genres, 
     image: data.image.medium,
-    schedule: data.schedule,
-    rating: data.rating,
-    network: data.network,
+    //schedule: data.schedule,
+    rating: data.rating.average,
+    network: data.network.name,
     summary: data.summary,
     runtime: data.runtime,
     premiered: data.premiered,
-    ending: data.ending
+    ending: data.ending,
+    time: data.schedule.time,
+    days: data.schedule.days[0]
+    
     }
 
 

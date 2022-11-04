@@ -16,10 +16,22 @@ export class CurrentShowComponent implements OnInit {
   constructor(private showService:CurrentShowServiceService) { 
     this.current = {
       name: '',
+<<<<<<< HEAD
       image: '',
       network:'',
       rating: -1,
       runtime: -1,
+=======
+      genres:'',
+      image: '',
+     // schedule: '',
+     days: '',
+     time: '',
+      rating: 0,
+      network: '',
+      summary: '',
+      runtime: 0,
+>>>>>>> 784970ee277d1d344b0b4ba8b626ae06323327df
       premiered: '',
       ending: '',
       summary: '',
@@ -30,7 +42,11 @@ export class CurrentShowComponent implements OnInit {
   }
 
   ngOnInit(): void {
+<<<<<<< HEAD
    
+=======
+    this.showService.CurrentShow('Girls').subscribe(data => this.current = data)
+>>>>>>> 784970ee277d1d344b0b4ba8b626ae06323327df
   }
 
 }

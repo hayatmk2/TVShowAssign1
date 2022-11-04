@@ -1,7 +1,6 @@
 <div>
-  <h1>Team 2's awesome TV show app assignemtn #1</h1>
-  <h2>You can look up shows using this cool app!</h2>
   <div>
+<<<<<<< HEAD
     <span>{{ current.name }}</span>
   </div>
   <div>
@@ -14,5 +13,27 @@
         current.network
       }}</span
     >
+=======
+    <span> <h1>Title: {{current.name}}</h1></span> 
+  </div>
+  <div>
+    <!-- this would be an image of the show -->
+    <div>
+      <img [src]='current.image'/>
+    </div>
+    Summary: {{current.summary}}
+    <br/>
+  <div> 
+    <span>Genres:{{current.genres}},</span>
+  </div>
+     <span>Schedule: {{current.days}} at {{current.time}}</span>
+    <div><span>Rating: {{current.rating}}</span> </div> 
+  <div>Network:{{current.network}}</div>
+  <div>Runtime: {{current.runtime}}</div>
+   <div> 
+    <span>premired: {{current.premiered}}</span></div>
+      <div> 
+        <span>Ended: {{current.ending}}</span></div>
+>>>>>>> 784970ee277d1d344b0b4ba8b626ae06323327df
   </div>
 </div>
