@@ -1,14 +1,14 @@
 export interface IcurrentShow {
-  name: string
+  name: string,
+  image: string,
+  network:string,
+  rating: number,
+  runtime: number,
+  premiered: string,
+  ending: string,
+  summary: string,
+  schedule:string,
   genres: string
-  image: string
-  schedule: string
-  rating: number
-  network: string
-  summary: string
-  runtime: number
-  premiered: string
-  ending: string
 
 }
 

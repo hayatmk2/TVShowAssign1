@@ -7,7 +7,7 @@ export interface ICurrentShowData {
   premiered: string,
   ending: string,
   summary: string,
-  schedule:{time: string, day:[string]},
+  schedule:{time: string, [days:string]:any},
   genres: [string]
   
 
