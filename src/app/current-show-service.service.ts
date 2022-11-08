@@ -11,7 +11,7 @@ export class CurrentShowServiceService {
 
   constructor(private httpClient:HttpClient) { }
 
-  CurrentShow (show:string){
+  CurrentShowData (show:string){
     return this.httpClient.get<ICurrentShowData>(`
     https://api.tvmaze.com/singlesearch/shows?q=${show}`).pipe(map(data => this.transformToICurrentShow(data)))
     

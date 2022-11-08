@@ -1,16 +1,19 @@
-<div>
+<div *ngIf="current.name">
   <div>
     <span> <h1>Title: {{current.name}}</h1></span> 
   </div>
   <div>
     <!-- this would be an image of the show -->
-    <div>
+    <div class="image">
       <img [src]='current.image'/>
     </div>
+    <br>
     Summary: {{current.summary}}
     <br/>
+    <br>
+    <br>
   <div> 
-    <span>Genres:{{current.genres}},</span>
+    <span>Genres: {{current.genres}},</span>
   </div>
      <span>Schedule: {{current.days}} at {{current.time}}</span>
     <div><span>Rating: {{current.rating}}</span> </div> 
@@ -21,4 +24,7 @@
       <div> 
         <span>Ended: {{current.ending}}</span></div>
   </div>
+</div>
+<div *ngIf="!current.name">
+  Please enter a show in the search bar. 
 </div>
