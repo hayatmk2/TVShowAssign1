@@ -1,9 +1,7 @@
 <mat-form-field>
-<mat-card>
-<mat-icon matPrefix> Search</mat-icon>
+<mat-icon matPrefix>search</mat-icon>
 <input class="searchBox" matInput [formControl] = "search">
 <mat-error *ngIf="search.invalid && (search.dirty || search.touched)">
   Search is required.
 </mat-error>
-</mat-card>
 </mat-form-field>
